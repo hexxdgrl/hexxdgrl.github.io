@@ -31,7 +31,7 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 65%;
+    width: auto;
     box-shadow: 5px 5px 10px #101636;
 }
 .linkBox {
@@ -42,6 +42,12 @@
 }
 
 .infoBox {
+    width: 50%;
+}
+
+.imageBox {
+    width: 800px;
+    padding: 15px;
 }
 
 html {
@@ -70,8 +76,10 @@ p {
 img {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     display: block;
-    width: auto;
-    border: 5px #dbd8ae solid;
+    width: 750px;
+    border: 2px #dbd8ae solid;
     border-radius: 15px;
+    padding: 0px;
 }
