@@ -1,6 +1,77 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.rubik-<uniquifier > {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.alfa-slab-one-regular {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.box {
+    border: 5px #dbd8ae solid;
+    background-color: #eae4d3;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 65%;
+    box-shadow: 5px 5px 10px #101636;
+}
+.linkBox {
+    position: fixed;
+    margin-left: 25px;
+    float: left;
+    width: 10%;
+}
+
+.infoBox {
+}
+
 html {
-    background-color: #0080c0;
+    background-image: linear-gradient(30deg, #0c3653, #88beda);
+    color: #a25e53;
+    height: auto;
+}
+
+a {
+    color: #c9545d;
 }
 
 h1 {
+    font-family: "Alfa Slab One";
+    text-align: center;
+    text-decoration: underline;
+}
+
+p {
+    font-family: "Bree Serif";
+    font-size: 16pt;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: auto;
+    border: 5px #dbd8ae solid;
+    border-radius: 15px;
 }
