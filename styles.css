@@ -34,13 +34,40 @@
     width: auto;
     box-shadow: 5px 5px 10px #101636;
 }
-.linkBox {
+.sideNav {
     position: fixed;
-    margin-left: 25px;
-    float: left;
-    width: 10%;
+    max-width: 300px;
+    min-width: auto;
+    text-align: left;
+    height: 100%;
+    overflow-x: 0;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #eae4d3;
+    border: 5px #dbd8ae;
+    border-right-style: solid;
 }
 
+.sideNav a {
+    display: block;
+    padding: 9px;
+    font-size: 18pt;
+    text-decoration: none;
+}
+
+.sideNav a:active {
+    text-decoration: underline;
+}
+.sideNav a:hover {
+    color: #88beda;
+}
+.sideNav h1 {
+    padding-left: 35px;
+    padding-right: 35px;
+    margin: 0px;
+    padding-top: 10px;
+}
 .infoBox {
     width: 50%;
 }
@@ -56,10 +83,15 @@ html {
     height: auto;
 }
 
+a:any-link:hover {
+    color: #88beda;
+}
+
 a {
     color: #c9545d;
     font-family: "Rubik";
     font-weight: bold;
+    transition: color 500ms;
 }
 
 h1 {
