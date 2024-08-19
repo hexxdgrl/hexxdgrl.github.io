@@ -11,12 +11,19 @@
     <head>
         <title>Learning Layouts</title>
     </head>
-    <div class="sideNav">
-        <h1>Directory</h1>
+    <div id="sideNav" class="sideNav">
+        <a class="closebutton" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
         <a href="klor_buildlog.html">KLOR Buildlog</a>
         <a href="learning_layouts.html">Learning Layouts</a>
+        <script src="js/navbar.js">
+            openNav();
+            closeNav();
+        </script>
     </div>
+    <span id="sideBarOpen" class="openButton" onclick="openNav()"
+        >directory</span
+    >
     <body>
         <div class="box infoBox">
             <h1>learning a new layout</h1>
