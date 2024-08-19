@@ -7,11 +7,14 @@
 />
 <link href="styles.css" rel="stylesheet" />
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <html>
     <head>
         <title>Lyra's Landing</title>
+
         <div id="sideNav" class="sideNav">
-            <a class="closebutton" onclick="closeNav()">&times;</a>
+            <a class="closebutton" onclick="closeNav()">close</a>
             <a href="index.html">Home</a>
             <a href="klor_buildlog.html">KLOR Buildlog</a>
             <a href="learning_layouts.html">Learning Layouts</a>
@@ -21,20 +24,17 @@
             </script>
         </div>
         <span id="sideBarOpen" class="openButton" onclick="openNav()"
-            >directory</span
-        >
+            >directory | home
+        </span>
     </head>
 
-    <body>
-        <div class="box infoBox">
+    <body id="main">
+        <div class="box">
             <h1>current board</h1>
             <p>
                 Currently, I'm using a CRKBD Corne Rev 3 with a combination
-                miryoku and engram layout pictured here:
+                miryoku and engram layout.
             </p>
-            <div class="box imageBox">
-                <img src="images/lyra-corne.png" alt="corne layout" />
-            </div>
             <p>
                 I have been using this "MiryoGram" layout for about a week.
                 Though this isnt the first time I've used a new layout, [in the
@@ -43,6 +43,7 @@
                 "splayed" style board in the works right now, and I will have
                 pictures and a build log in the near future...
             </p>
+            <img src="images/lyra-corne.png" alt="corne layout" />
         </div>
 
         <div class="box infoBox">
@@ -65,9 +66,7 @@
                 I have the "new" layout for this keyboard pictured below and
                 when the time comes, the pictures of the completed build.
             </p>
-            <div class="box imageBox">
-                <img src="images/lyra-klor.png" alt="klor layout" />
-            </div>
+            <img src="images/lyra-klor.png" alt="klor layout" />
         </div>
     </body>
 </html>

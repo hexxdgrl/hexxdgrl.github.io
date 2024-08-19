@@ -7,12 +7,15 @@
 />
 <link href="styles.css" rel="stylesheet" />
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <html>
     <head>
         <title>KLOR build log</title>
     </head>
+
     <div id="sideNav" class="sideNav">
-        <a class="closebutton" onclick="closeNav()">&times;</a>
+        <a class="closebutton" onclick="closeNav()">close</a>
         <a href="index.html">Home</a>
         <a href="klor_buildlog.html">KLOR Buildlog</a>
         <a href="learning_layouts.html">Learning Layouts</a>
@@ -21,42 +24,47 @@
             closeNav();
         </script>
     </div>
+
     <span id="sideBarOpen" class="openButton" onclick="openNav()"
-        >directory</span
+        >directory | klor buildlog</span
     >
-    <div class="box infoBox">
-        <h1>first steps</h1>
-        <p>
-            Jumping into this, I knew I wanted an split ortho layout, finger
-            splay, and at least 42 keys. Size wasn't really a concern for me
-            given this is going to be a home office board, and almost every
-            split ortho 40% out there takes up less space than your standard
-            ANSI-10X keyboards, not to mention the other layouts.
-        </p>
-        <p>
-            After trawling the web (mostly reddit), I almost went with the
-            Hillside; another splayed, split-ortho keyboard; but after scrolling
-            one comment down, i found it... the KLOR. It looked absolutely
-            perfect and fit my requirements exactly. So, 100$ later, the PCB and
-            all the other junk io need is now its way here.
-        </p>
-        <p>
-            As of now, the PCB remains in transit, and as such I have been
-            relegated to making anything I can premptively. First order of
-            business: deiciding a colour scheme.
-        </p>
-        <h1>starting the build</h1>
-        <p>
-            This was easy enough, I just took my linux config colors, headed
-            down to microcenter and tried to get the closest resin color matches
-            I could. Dark blue for the case, light blue for the caps. I have
-            limited time and access to my resin printer, so all I was able to
-            finish this first week was the keycaps, though I think they came out
-            absolutely fantastic.
-        </p>
-        <div class="box imageBox">
+
+    <body id="main">
+        <div class="box">
+            <h1>first steps</h1>
+            <p>
+                Jumping into this, I knew I wanted an split ortho layout, finger
+                splay, and at least 42 keys. Size wasn't really a concern for me
+                given this is going to be a home office board, and almost every
+                split ortho 40% out there takes up less space than your standard
+                ANSI-10X keyboards, not to mention the other layouts.
+            </p>
+            <p>
+                After trawling the web (mostly reddit), I almost went with the
+                Hillside; another splayed, split-ortho keyboard; but after
+                scrolling one comment down, i found it... the KLOR. It looked
+                absolutely perfect and fit my requirements exactly. So, 100$
+                later, the PCB and all the other junk io need is now its way
+                here.
+            </p>
+            <p>
+                As of now, the PCB remains in transit, and as such I have been
+                relegated to making anything I can premptively. First order of
+                business: deiciding a colour scheme.
+            </p>
+        </div>
+        <div class="box">
+            <h1>starting the build</h1>
+            <p>
+                This was easy enough, I just took my linux config colors, headed
+                down to microcenter and tried to get the closest resin color
+                matches I could. Dark blue for the case, light blue for the
+                caps. I have limited time and access to my resin printer, so all
+                I was able to finish this first week was the keycaps, though I
+                think they came out absolutely fantastic.
+            </p>
             <img src="images/caps_curing.webp" alt="resin keycaps curing" />
             <img src="images/cap_closeup.webp" alt="closeup of a keycap" />
         </div>
-    </div>
+    </body>
 </html>

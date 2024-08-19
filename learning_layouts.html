@@ -6,13 +6,16 @@
     rel="stylesheet"
 />
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <link href="styles.css" rel="stylesheet" />
 <html>
     <head>
         <title>Learning Layouts</title>
     </head>
+
     <div id="sideNav" class="sideNav">
-        <a class="closebutton" onclick="closeNav()">&times;</a>
+        <a class="closebutton" onclick="closeNav()">close</a>
         <a href="index.html">Home</a>
         <a href="klor_buildlog.html">KLOR Buildlog</a>
         <a href="learning_layouts.html">Learning Layouts</a>
@@ -21,13 +24,14 @@
             closeNav();
         </script>
     </div>
+
     <span id="sideBarOpen" class="openButton" onclick="openNav()"
-        >directory</span
+        >directory | learning a new layout</span
     >
-    <body>
-        <div class="box infoBox">
-            <h1>learning a new layout</h1>
-            <h2>week one</h2>
+
+    <body id="main">
+        <div class="box">
+            <h1>week one</h1>
             <p>
                 When I decided too go full ergo, apparently I wanted too disrupt
                 my muscle memory as much as possible. I switched from a 60% with
@@ -37,47 +41,42 @@
                 of the Colemak homerow, as I'm constantly performing rolls that
                 aren't there and reaching for the wrong keys.
             </p>
-            <div class="box imageBox">
-                <img src="images/Error_Graph_Week_One.png" alt="error graph" />
-                <img src="images/Speed_Graph_Week_One.png" alt="speed graph" />
-            </div>
-            <h2>week two</h2>
+            <img src="images/Error_Graph_Week_One.png" alt="error graph" />
+            <img src="images/Speed_Graph_Week_One.png" alt="speed graph" />
+        </div>
+        <div class="box">
+            <h1>week two</h1>
             <p>
                 my muscle memory has adapted much more in the past week and my
                 WPM (on a typing test) hovers around 30 wpm. However, my
                 accuracy is only about 92% :(.
             </p>
-            <div class="box imageBox">
-                <img
-                    src="images/Typing Test week 2.png"
-                    alt="typing test results"
-                />
-            </div>
+            <img
+                src="images/Typing Test week 2.png"
+                alt="typing test results"
+            />
             <p>
                 Ironically enough, by far my most missed letters are those on
                 the home row.
             </p>
-            <div class="box imageBox">
-                <img
-                    src="images/hit⁄miss ratio week 2.png"
-                    alt="hit/miss ratio on typing practice"
-                />
-                <div style="text-align: center; max-width: 225px" class="box">
-                    <a style="color: #5f6cb4">hit</a>
-                    <a> | </a>
-                    <a style="color: #b13e3d">miss</a>
-                    <a> | </a>
-                    <a style="color: #b140b4">hits/misses</a>
-                </div>
+            <img
+                src="images/hit⁄miss ratio week 2.png"
+                alt="hit/miss ratio on typing practice"
+            />
+            <div style="margin: 5px auto; text-align: center; max-width: 225px">
+                <a style="color: #5f6cb4">hit</a>
+                <a> | </a>
+                <a style="color: #b13e3d">miss</a>
+                <a> | </a>
+                <a style="color: #b140b4">hits/misses</a>
             </div>
+
             <p>
                 I also did some custom excercises to help with finger placement,
                 that's why the graph has that spike and then hard drop in both
                 WPM and accuracy.
             </p>
-            <div class="box imageBox">
-                <img src="images/wpm chart week 2.png" alt="wpm chart" />
-            </div>
+            <img src="images/wpm chart week 2.png" alt="wpm chart" />
         </div>
     </body>
 </html>
