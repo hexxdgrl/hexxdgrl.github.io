@@ -1,19 +1,14 @@
-.bebas-neue-regular {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+:root {
+    --bg-col: #eae4d3;
+    --bor-col: #dbd8ae;
+    --text-col: #a25e53;
+    --link-col: #c9545d;
+    --link-hover-col: #88beda;
 }
-
 .rubik-<uniquifier > {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: <weight>;
-    font-style: normal;
-}
-
-.alfa-slab-one-regular {
-    font-family: "Alfa Slab One", serif;
-    font-weight: 400;
     font-style: normal;
 }
 
@@ -23,8 +18,8 @@
     font-style: normal;
 }
 .box {
-    border: 5px #dbd8ae solid;
-    background-color: #eae4d3;
+    border: 5px var(--bor-col) solid;
+    background-color: var(--bg-col);
     border-radius: 10px;
     padding: 15px;
     margin-left: auto;
@@ -36,37 +31,60 @@
 }
 .sideNav {
     position: fixed;
-    max-width: 300px;
-    min-width: auto;
+    width: 0;
+    padding-top: 60px;
     text-align: left;
     height: 100%;
-    overflow-x: 0;
+    overflow-x: hidden;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #eae4d3;
     border: 5px #dbd8ae;
     border-right-style: solid;
+    transition: 500ms;
+}
+
+.sideNav .closebutton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
 .sideNav a {
     display: block;
-    padding: 9px;
+    padding: 9px 9px 9px 40px;
     font-size: 18pt;
     text-decoration: none;
+    transition: 300ms;
 }
 
-.sideNav a:active {
-    text-decoration: underline;
-}
 .sideNav a:hover {
-    color: #88beda;
+    color: --link;
 }
-.sideNav h1 {
-    padding-left: 35px;
-    padding-right: 35px;
-    margin: 0px;
-    padding-top: 10px;
+
+.openButton {
+    position: absolute;
+    border: 5px var(--bor-col) solid;
+    transition: 400ms;
+    top: 20px;
+    left: 30px;
+    overflow-x: 0;
+    z-index: 1;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: var(--bg-col);
+    font-family: "Rubik";
+    font-weight: 900;
+}
+
+.openButton:hover {
+    border: 5px var(--text-col) solid;
+    transition: 300ms;
 }
 .infoBox {
     width: 50%;
@@ -79,32 +97,37 @@
 
 html {
     background-image: linear-gradient(30deg, #0c3653, #88beda);
-    color: #a25e53;
+    color: var(--text-col);
     height: auto;
 }
-
+a:any-link {
+    color: var(--link-col);
+}
 a:any-link:hover {
-    color: #88beda;
+    color: var(--link-hover-col);
 }
 
 a {
-    color: #c9545d;
+    color: var(--text-col);
     font-family: "Rubik";
     font-weight: bold;
     transition: color 500ms;
 }
 
 h1 {
-    font-family: "Alfa Slab One";
+    font-family: "Rubik";
+    font-weight: 900;
     text-align: center;
-    text-decoration: underline;
 }
+
 h2 {
-    font-family: "Alfa Slab One";
+    font-family: "Rubik";
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
     font-weight: 150;
 }
+
 p {
     font-family: "Bree Serif";
     font-size: 16pt;
@@ -118,7 +141,7 @@ img {
     margin-bottom: 10px;
     display: block;
     width: 750px;
-    border: 2px #dbd8ae solid;
+    border: 2px var(--bor-col) solid;
     border-radius: 15px;
     padding: 0px;
 }

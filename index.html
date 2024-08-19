@@ -5,19 +5,26 @@
     href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bree+Serif&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet"
 />
-
 <link href="styles.css" rel="stylesheet" />
 
 <html>
     <head>
         <title>Lyra's Landing</title>
+        <div id="sideNav" class="sideNav">
+            <a class="closebutton" onclick="closeNav()">&times;</a>
+            <a href="index.html">Home</a>
+            <a href="klor_buildlog.html">KLOR Buildlog</a>
+            <a href="learning_layouts.html">Learning Layouts</a>
+            <script src="js/navbar.js">
+                openNav();
+                closeNav();
+            </script>
+        </div>
+        <span id="sideBarOpen" class="openButton" onclick="openNav()"
+            >directory</span
+        >
     </head>
-    <div class="sideNav">
-        <h1>Directory</h1>
-        <a href="index.html">Home</a>
-        <a href="klor_buildlog.html">KLOR Buildlog</a>
-        <a href="learning_layouts.html">Learning Layouts</a>
-    </div>
+
     <body>
         <div class="box infoBox">
             <h1>current board</h1>
@@ -30,7 +37,7 @@
             </div>
             <p>
                 I have been using this "MiryoGram" layout for about a week.
-                Though this isn't the first time I've used a new layout, [in the
+                Though this isnt the first time I've used a new layout, [in the
                 past I switched from QWERTY to Colemak...] I'm still struggling
                 to adjust to such a drastic change in layout :'3. I have another
                 "splayed" style board in the works right now, and I will have
@@ -45,6 +52,7 @@
                 GEIGEIGEIST, and you can find that keeb
                 <a
                     style="font-family: Bree Serif"
+                    color="#C9545D"
                     href="https://github.com/geigeigeist/klor"
                     >here</a
                 >.) I decided to go with the "polydactyl" layout, with an extra
