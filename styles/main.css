@@ -18,6 +18,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
 .box {
     border: 5px var(--bor-col) solid;
     background-color: var(--box-bg-col);
@@ -26,7 +27,9 @@
     max-width: 50%;
     margin: 10px;
     padding: 10px;
+    height: auto;
 }
+
 .sideNav {
     position: fixed;
     width: 0;
