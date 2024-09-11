@@ -1,0 +1,43 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="styles/main.css" rel="stylesheet" />
+<html>
+    <head>
+        <title id="pagetitle">general_keebing</title>
+    </head>
+    <div id="navmenu"></div>
+    <span id="sideBarOpen" class="openButton" onclick="openNav()">usr/</span>
+    <body id="main" onload="getTitle(), getPages()">
+        <div class="box">
+            <h1>current board</h1>
+            <p>
+                Currently, I'm using a CRKBD Corne Rev 3 with a combination
+                miryoku and engram layout.
+            </p>
+            <p>
+                I have been using this "MiryoGram" layout for about a week.
+                Though this isnt the first time I've used a new layout, [in the
+                past I switched from QWERTY to Colemak...] I'm still struggling
+                to adjust to such a drastic change in layout :'3. I have another
+                "splayed" style board in the works right now, and I will have
+                pictures and a build log in the near future...
+            </p>
+            <img src="images/lyra-corne.png" alt="corne layout" />
+        </div>
+
+        <div class="box infoBox">
+            <h1>current projects</h1>
+            <p>
+                Unfortunately, the KLOR board was a bust, which is a real damn
+                shame, but that failure has indeed inspired me to create my own
+                board. You can find more about it in the swallowtail section!!
+            </p>
+        </div>
+        <script src="js/navMenu.js">
+            openNav();
+            closeNav();
+            getTitle();
+            getPages();
+        </script>
+    </body>
+</html>
