@@ -1,30 +1,69 @@
 <!doctype html>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bree+Serif&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet"
-/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href="styles/main.css" rel="stylesheet" />
-<link href="styles/mobile.css" media="(max-width:500px)" rel="stylesheet" />
 <html>
     <head>
-        <title>Lyra's Landing</title>
-
-        <div id="sideNav" class="sideNav">
-            <a class="closebutton" onclick="closeNav()">close</a>
-            <a href="index.html">Home</a>
-            <a href="swallowtail.html">The Swallowtail Keyboard</a>
-            <a href="learning_layouts.html">Learning Layouts</a>
-            <script src="js/navbar.js">
-                openNav();
-                closeNav();
-            </script>
-        </div>
-        <span id="sideBarOpen" class="openButton" onclick="openNav()"
-            >directory | home
-        </span>
+        <title id="pagetitle">swallowtail_keyboard</title>
     </head>
-    <body></body>
+    <div id="navmenu"></div>
+    <span id="sideBarOpen" class="openButton" onclick="openNav()">usr/</span>
+    <body id="main" onload="getTitle(), getPages()">
+        <div class="box">
+            <h1>hey... this is still very much WIP!</h1>
+            <p>
+                This is an ongoing project and this page probably wont be
+                complete for a fair while... keep checking back if you're
+                interested! All the config files, kicad files, etc. are in
+                <a href="https://github.com/hexxdgrl/swallowtailkb"
+                    >the github repo</a
+                >
+                if you're looking for those! This is just somewhere for me to
+                write out what I did to make it !
+            </p>
+        </div>
+        <div class="box">
+            <h1>the swallowtail</h1>
+            <p>
+                I started designing this board as I was frustrated with my
+                failure to assemble a PCB kit (lol, I know). I didn't want to
+                spend that money on <i>another</i> PCB kit, so I figured... why
+                not make my own? I started with
+                <a href="https://github.com/ergogen/ergogen">ergogen</a>, a
+                fantastic and relatively speaking easy to use tool.
+            </p>
+            <p>
+                After a <i>lot</i> of tinkering, I came up with the first
+                design, a non-split with MX switches as thats what im used to.
+            </p>
+            <img src="images/ergogen_unsplit.png" alt="unsplit keyboard" />
+            <p>
+                You can definitely see where the name comes from. However, I
+                decided to go a different route. I really enjoy having a split
+                board, so I designed a split version. It uses choc switches, a
+                first for me despite the many, MANY keyboards I've built over
+                the last 5 years.
+            </p>
+            <img src="images/ergogen_split.png" alt="split keyboard" />
+            <p>
+                The PCB for the split (the only PCB I've routed so far) took a
+                lot of iterations, and a lot of trial and error. However, the
+                PCB files have been sent off for manufacture and are en-route to
+                me as this is being typed.
+            </p>
+            <img
+                src="images/kicad_split.png"
+                alt="kicad board router view of the split pcb"
+            />
+            <p>
+                I am extremely happy with the way the board looks on the screen
+                and I am absolutely ecstatic to see it in RL.
+            </p>
+        </div>
+        <script src="js/navMenu.js">
+            openNav();
+            closeNav();
+            getTitle();
+            getPages();
+        </script>
+    </body>
 </html>
