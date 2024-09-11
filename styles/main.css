@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Iosevka";
     font-weight: normal;
-    src: url("Iosevka.otf") format("truetype");
+    src: url("Iosevka.otf") format("opentype");
 }
 
 :root {
