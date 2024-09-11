@@ -152,7 +152,10 @@ img {
 }
 
 ul {
-    text-align: center;
     list-style-type: none;
     font-size: 14pt;
+}
+
+li {
+    padding: 5pt;
 }
