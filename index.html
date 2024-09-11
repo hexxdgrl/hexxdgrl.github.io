@@ -1,57 +1,55 @@
 <!doctype html>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-    href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Bree+Serif&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet"
-/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link href="styles/main.css" rel="stylesheet" />
-<link href="styles/mobile.css" media="(max-width:500px)" rel="stylesheet" />
 <html>
     <head>
-        <title>Lyra's Landing</title>
-
-        <div id="sideNav" class="sideNav">
-            <a class="closebutton" onclick="closeNav()">close</a>
-            <a href="index.html">Home</a>
-            <a href="swallowtail.html">The Swallowtail Keyboard</a>
-            <a href="learning_layouts.html">Learning Layouts</a>
-            <script src="js/navbar.js">
-                openNav();
-                closeNav();
-            </script>
-        </div>
-        <span id="sideBarOpen" class="openButton" onclick="openNav()"
-            >directory | home
-        </span>
+        <title id="pagetitle">home</title>
     </head>
-
-    <body id="main">
+    <div id="navmenu"></div>
+    <span id="sideBarOpen" class="openButton" onclick="openNav()">usr/</span>
+    <body id="main" onload="getTitle(), getPages()">
         <div class="box">
-            <h1>current board</h1>
+            <h1>what is this?</h1>
             <p>
-                Currently, I'm using a CRKBD Corne Rev 3 with a combination
-                miryoku and engram layout.
-            </p>
-            <p>
-                I have been using this "MiryoGram" layout for about a week.
-                Though this isnt the first time I've used a new layout, [in the
-                past I switched from QWERTY to Colemak...] I'm still struggling
-                to adjust to such a drastic change in layout :'3. I have another
-                "splayed" style board in the works right now, and I will have
-                pictures and a build log in the near future...
-            </p>
-            <img src="images/lyra-corne.png" alt="corne layout" />
-        </div>
-
-        <div class="box infoBox">
-            <h1>current projects</h1>
-            <p>
-                Unfortunately, the KLOR board was a bust, which is a real damn
-                shame, but that failure has indeed inspired me to create my own
-                board. You can find more about it in the swallowtail section!!
+                Hi, I'm hexxdgrl, or Lyra! Welcome to my little site about,
+                well, me! Anything I like to do and post online will probably
+                end up here.
             </p>
         </div>
+        <div class="box">
+            <h1>about me</h1>
+            <p>
+                I've been an on and off "developer" for as long as I can
+                remember. I'm still very inexperienced, but with all the
+                projects I've been giving myself, that inexperience has slowly
+                but surely chipped away. I make music, draw, build keyboards,
+                work on cars, and soon to be planes. I play a lot of games,
+                anything you can think of basically. I use linux (arch ofc) and
+                you can find my config files
+                <a href="https://github.com/hexxdgrl/.dotfiles">here</a> on my
+                github! I love to customize everything, and you may notice my
+                site matches my desktop ^u^ !! If you want to find out what I'm
+                up to, go ahead and browse the sidebar.
+            </p>
+        </div>
+        <div class="box">
+            <h1>where to find me</h1>
+            <p style="text-align: center">
+                I stay away from socials, but you can contact me here:
+            </p>
+            <ul>
+                <li>discord: littleliarlyra</li>
+            </ul>
+            <p>
+                Maybe I'll have an irc and an email linked here at some point,
+                but we'll see :p
+            </p>
+        </div>
+        <script src="js/navMenu.js">
+            openNav();
+            closeNav();
+            getTitle();
+            getPages();
+        </script>
     </body>
 </html>
