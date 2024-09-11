@@ -1,0 +1,44 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="styles/main.css" rel="stylesheet" />
+<html>
+    <head>
+        <title id="pagetitle">cool_sites</title>
+    </head>
+    <div id="navmenu"></div>
+    <span id="sideBarOpen" class="openButton" onclick="openNav()">usr/</span>
+    <body id="main" onload="getTitle(), getPages()">
+        <div class="box">
+            <h1>cool sites</h1>
+            <p>
+                This is just a little collection of sites I like, find
+                interesting, or find useful! I hope you can get some use out of
+                it too :3
+            </p>
+        </div>
+        <div class="box">
+            <h1>keyboard stuff</h1>
+            <ul>
+                <li>
+                    <a href="https://dreymar.colemak.org/">
+                        Dreymar's KBD Tricks</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://github.com/Bastardkb/dilemma?tab=readme-ov-file#assembled-version"
+                    >
+                        BastardKB Dilemma</a
+                    >
+                </li>
+                <li><a href="https://problemwords.com/">Problem Words</a></li>
+            </ul>
+        </div>
+        <script src="js/navMenu.js">
+            openNav();
+            closeNav();
+            getTitle();
+            getPages();
+        </script>
+    </body>
+</html>
