@@ -1,17 +1,15 @@
 function openNav() {
-  document.getElementById("sideNav").style.width = "300px";
-  document.getElementById("sideBarOpen").style.left = "-550px";
+  document.getElementById("sideNav").style.width = "100vw";
+  document.getElementById("sideBarOpen").style.left = "-100vw";
   document.getElementById("sideNav").style.borderRight = "2px";
   document.getElementById("sideNav").style.borderRightStyle = "solid";
   document.getElementById("sideNav").style.borderColor = "var(--bor-col)";
-  document.getElementById("main").style.marginLeft = "250px";
 }
 function closeNav() {
   document.getElementById("sideNav").style.width = "0px";
   document.getElementById("sideBarOpen").style.left = "0px";
   document.getElementById("sideNav").style.borderRight = "0px";
   document.getElementById("sideNav").style.borderRightStyle = "none";
-  document.getElementById("main").style.marginLeft = "0px";
 }
 var home = "index.html";
 var sites = "interesting-sites.html";

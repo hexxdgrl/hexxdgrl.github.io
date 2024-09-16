@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Iosevka";
     font-weight: normal;
-    src: url("Iosevka.otf") format("truetype");
+    src: url("Iosevka.otf") format("opentype");
 }
 
 :root {
@@ -33,10 +33,8 @@
 .box {
     border: 2px var(--bor-col) solid;
     background-color: var(--bg-col);
-    min-width: 20%;
-    max-width: 50%;
-    margin: 10px auto;
-    padding: 0;
+    width: 90vw;
+    margin: 5vw auto;
     height: auto;
 }
 
@@ -75,7 +73,7 @@
     left: 0px;
     font-weight: 900;
     margin: 0px;
-    width: 300pt;
+    width: 100vw;
     border-top-width: 2pt;
 }
 
@@ -85,7 +83,7 @@
 }
 
 .openButton {
-    position: absolute;
+    position: fixed;
     transition: 400ms;
     top: 0px;
     left: 0px;
@@ -110,7 +108,7 @@
     transition: 300ms;
     display: flex;
     flex-direction: column;
-    padding: 50px 35px;
+    padding-top: 35px;
     background: var(--bg-col);
 }
 
@@ -144,10 +142,9 @@ a {
 }
 
 img {
-    margin: 10px auto;
     display: block;
-    width: auto;
-    max-width: 100%;
+    margin: 3vw auto;
+    max-width: 80vw;
     border: 2px var(--bor-col) solid;
 }
 
