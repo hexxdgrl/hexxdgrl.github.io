@@ -16,6 +16,7 @@ var sites = "interesting-sites.html";
 var layouts = "learning_layouts.html";
 var keebing = "silly-keyboard-stuff.html";
 var swallowtail = "swallowtail.html";
+var music = "music_and_etc.html";
 function getPages() {
   document
     .getElementById("navmenu")
@@ -35,6 +36,9 @@ function getPages() {
         '<a href="' +
         swallowtail +
         '">swallowtail_keyboard</a>' +
+        '<a href="' +
+        music +
+        '">music_and_etc</a>' +
         '<a href="' +
         sites +
         '">cool_sites</a>' +

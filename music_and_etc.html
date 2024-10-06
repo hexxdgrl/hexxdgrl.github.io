@@ -1,0 +1,71 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="styles/main.css" rel="stylesheet" />
+<html>
+    <head>
+        <title id="pagetitle">music_and_etc</title>
+    </head>
+    <div id="navmenu"></div>
+    <span id="sideBarOpen" class="openButton" onclick="openNav()">usr/</span>
+    <body id="main" onload="getTitle(), getPages()">
+        <div class="box">
+            <h1>what i'm listening to (October 2024)</h1>
+            <div style="flex-direction: row; display: flex; padding: 1vw">
+                <div style="width: 50%; display: flex; flex-direction: column">
+                    <p style="padding: 0; margin: auto 0; padding-right: 1vw">
+                        Recently I've been diving into a lot of 90s-00s Dark
+                        Amen and DnB kinda stuff. Mostly been listening to the
+                        classics like Dillinja and Ed Rush. On the complete
+                        other end of the spectrum: been listening to a lot of
+                        mashcore as well! Mostly dariacore and the like, though
+                        have added artists like shoebill back into my listening
+                        pool recently, though my beloved user-177606669 remains
+                        on top.
+                    </p>
+                    <div
+                        style="
+                            display: flex;
+                            flex-direction: row;
+                            max-width: 100%;
+                            padding-right: 1vw;
+                            margin: auto;
+                        "
+                    >
+                        <div width="50%" style="text-align: center">
+                            <a>top albums</a>
+                            <img
+                                src="https://media.discordapp.net/attachments/1244005391445000339/1292609310567694376/album-chart-5w-5h-Weekly-mikichannn.png?ex=67045bbb&is=67030a3b&hm=602ce013a7349dfa48d421385fb253ca34ce553cbaffeaa9a8af2688760bed38&=&format=webp&quality=lossless&width=614&height=614"
+                                width="100%"
+                                style="margin: 0; padding: 0"
+                            />
+                        </div>
+                        <div width="50%" style="text-align: center">
+                            <a>top artists</a>
+                            <img
+                                src="https://media.discordapp.net/attachments/1244005391445000339/1292609267580539032/artist-chart-5w-5h-Weekly-mikichannn.png?ex=67045bb0&is=67030a30&hm=1c11e8ed3710654143ac6914e7f9f48ef1535128b56cd90654361b22afe8248f&=&format=webp&quality=lossless&width=614&height=614"
+                                width="100%"
+                                style="margin: 0; padding: 0"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <iframe
+                    style="border-radius: 12px"
+                    src="https://open.spotify.com/embed/playlist/1GaGRVEC1KZDPbtCyLa0Ul?utm_source=generator&theme=0"
+                    width="50%"
+                    height="auto"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </div>
+        <script src="js/navMenu.js">
+            openNav();
+            closeNav();
+            getTitle();
+            getPages();
+        </script>
+    </body>
+</html>
