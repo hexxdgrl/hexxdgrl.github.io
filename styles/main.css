@@ -34,7 +34,7 @@
     border: 2px var(--bor-col) solid;
     background-color: var(--bg-col);
     width: 90vw;
-    margin: 5vw auto;
+    margin: 5vw auto 0 auto;
     height: auto;
 }
 
